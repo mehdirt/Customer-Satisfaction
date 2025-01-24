@@ -33,7 +33,7 @@ class IngestData:
         return pd.read_csv(self.data_path)
     
 @step
-def ingest_data(data_path: str) -> pd.DataFrame:
+def ingest_dframe(data_path: str) -> pd.DataFrame:
     """
     A ZenML step to ingest data from a specified file path.
 
