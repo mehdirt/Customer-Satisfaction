@@ -1,9 +1,17 @@
 import logging
 import pandas as pd
 from zenml import step
+from pydantic import BaseModel
+
+# Create a Pydantic model with arbitrary_types_allowed
+class DataFrameConfig(BaseModel):
+    df: pd.DataFrame
+
+    class Config:
+        arbitrary_types_allowed = True
 
 @step
-def clean_dframe(dframe: pd.DataFrame) -> None: #! Must be changed tp pd.DataFrame
+def clean_dframe(dframe: DataFrameConfig) -> None: #! Must be changed tp pd.DataFrame
     """
     """
     pass

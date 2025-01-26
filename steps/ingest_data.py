@@ -1,6 +1,14 @@
 import logging
 import pandas as pd
 from zenml import step
+from pydantic import BaseModel
+
+# Create a Pydantic model with arbitrary_types_allowed
+class DataFrameConfig(BaseModel):
+    df: pd.DataFrame
+
+    class Config:
+        arbitrary_types_allowed = True
 
 class IngestData:
     """
@@ -33,7 +41,7 @@ class IngestData:
         return pd.read_csv(self.data_path)
     
 @step
-def ingest_dframe(data_path: str) -> pd.DataFrame:
+def ingest_dframe(data_path: str) -> DataFrameConfig:
     """
     A ZenML step to ingest data from a specified file path.
 

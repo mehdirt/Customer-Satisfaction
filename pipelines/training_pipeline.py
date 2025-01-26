@@ -9,7 +9,7 @@ def train_pipeline(data_path: str):
     """
     """
     df = ingest_dframe(data_path)
-    df = clean_dframe(df)
+    clean_dframe(df)
     train_model(df)
     evaluate_model(df)
 
