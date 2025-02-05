@@ -49,7 +49,7 @@ def clean_dframe(dframe: pd.DataFrame) -> Tuple[
 
         # Split the data into train/test
         split_strategy = DataSplitStrategy()
-        data_cleaning = DataCleaning(dframe, strategy=DataSplitStrategy)
+        data_cleaning = DataCleaning(processed_data, strategy=split_strategy)
         X_train, X_test, y_train, y_test = data_cleaning.handle_data()
         logging.info("Data splitting finished")
         logging.info("Data Cleaning Completed")

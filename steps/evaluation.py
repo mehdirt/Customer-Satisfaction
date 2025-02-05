@@ -18,6 +18,12 @@ def evaluate_model(
     ]:
     """
     Evaluate the model on the ingested data.
+    Args:
+        model: RegressorMinxin
+        X_test: pd.DataFrame
+        y_test: pd.Series
+    Returns:
+        Tuple[float, float]
     """
     try:
         prediction = model.predict(X_test)

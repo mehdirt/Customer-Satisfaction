@@ -19,7 +19,7 @@ def train_model(X_train, X_test, y_train, y_test, config: ModelNameConfig) -> Re
     config: ModelNameConfig
     
     Returns:
-        RegressorMixin 
+        RegressorMixin
     """
     try:
         model = None
