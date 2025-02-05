@@ -53,7 +53,8 @@ def clean_dframe(dframe: pd.DataFrame) -> Tuple[
         X_train, X_test, y_train, y_test = data_cleaning.handle_data()
         logging.info("Data splitting finished")
         logging.info("Data Cleaning Completed")
-
+        
+        return X_train, X_test, y_train, y_test
     except Exception as err:
         logging.error(f"Error occuered in cleaning data: {err}")
         raise err
