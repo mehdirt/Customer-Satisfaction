@@ -8,7 +8,7 @@ from src.model_dev import LinearRegressionModel
 from .config import ModelNameConfig
 
 @step
-def train_model(X_train, X_test, y_train, y_test, config) -> RegressorMixin:
+def train_model(X_train, X_test, y_train, y_test, config: ModelNameConfig) -> RegressorMixin:
     """
     Train the model on the ingested data.
     Args:
