@@ -37,7 +37,7 @@ class DataPreProcessStrategy(DataStrategy):
             data["product_weight_g"].fillna(data["product_weight_g"].median(), inplace=True)
             data["product_length_cm"].fillna(data["product_length_cm"].median(), inplace=True)
             data["product_height_cm"].fillna(data["product_height_cm"].median(), inplace=True)
-            data["product_weight_cm"].fillna(data["product_weight_cm"].median(), inplace=True)
+            data["product_width_cm"].fillna(data["product_width_cm"].median(), inplace=True)
             data["review_comment_message"].fillna("No review", inplace=True)
             # Select cumeric features
             data = data.select_dtypes(include=[np.number])
