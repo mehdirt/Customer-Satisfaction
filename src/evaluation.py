@@ -59,7 +59,7 @@ class R2(Evalueation):
         try:
             logging.info("Calculating R2 Score")
             r2 = r2_score(y_true, y_pred)
-            logging.info(f"MSE: {r2}")
+            logging.info(f"R2: {r2}")
             return r2
         except Exception as err:
             logging.error(f"Error occured in calculating MSE: {err}")
@@ -80,7 +80,7 @@ class RMSE(Evalueation):
         try:
             logging.info("Calculating R2 Score")
             rmse = root_mean_squared_error(y_true, y_pred)
-            logging.info(f"MSE: {rmse}")
+            logging.info(f"RMSE: {rmse}")
             return rmse
         except Exception as err:
             logging.error(f"Error occured in calculating MSE: {err}")
