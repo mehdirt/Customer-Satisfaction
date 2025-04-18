@@ -196,7 +196,7 @@ The model predicts a customer satisfaction score on a scale of 0-5.
 
 ## Project Demo
 
-- Explore the web app to see the project in action: **[Live Demo](https://breast-cancer-diagnosis-mehdirt.streamlit.app/)**
+- Explore the web app to see the project in action: **[Live Demo](https://customer-satisfaction-7gsdkyqbbwhrkaydmeudez.streamlit.app/)**
 
 
 ## 📝 License
