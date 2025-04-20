@@ -205,7 +205,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 
 ## Contact Information
-Thank you for exploring the **Breast Cancer Diagnosis** project! If you have any feedback, feel free to reach out.
+If you have any feedback, feel free to reach out.
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mahdirafati680@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahdi-rafati-97420a197/)
