@@ -74,7 +74,6 @@ This project focuses on predicting customer satisfaction scores (ranging from 0-
   - Model tracking
   - Experiment management
   - Model serving
-- **Docker**: Containerization for deployment
 
 ### Web Interface
 - **Streamlit**: 
